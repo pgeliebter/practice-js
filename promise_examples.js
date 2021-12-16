@@ -2,12 +2,12 @@ const array = []
 array.push('before')
 
 new Promise((resolve) => {
-  array.push('constructed')
-  resolve('where am i')
-  array.push('hey!!!')
+  array.push('constructed from sync')
+  resolve('where am i from async')
+  array.push('hey from sync!!!')
 }).then((n) => {
   array.push(n)
-  array.push('then')
+  array.push('then async')
 })
 array.push('after')
 
