@@ -1,9 +1,12 @@
 function tryAndCatch() {
   try {
     throw new Error('oh no')
-  } catch (e) {
-    // do nothing
+  } finally {
   }
+  // catch (e) {
+  //   // do nothing
+  // }
+
   return 'we got to the end'
 }
-tryAndCatch()
+console.log(tryAndCatch())
